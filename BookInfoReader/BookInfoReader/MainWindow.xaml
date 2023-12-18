@@ -1,0 +1,26 @@
+﻿<Window x:Class="BookInfoReader.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Book Info Reader" MinWidth="300" MaxWidth="1260" MaxHeight="850" Height="Auto" Width="Auto" SizeToContent="WidthAndHeight">
+    <Grid>
+        <StackPanel>
+            <Expander Header="Title" ExpandDirection="Down" IsExpanded="True">
+                <TextBox x:Name="TitleTextBox" Margin="10" TextWrapping="Wrap" AcceptsReturn="True" MaxHeight="100"/>
+            </Expander>
+
+            <TextBlock Text="Circulation:" Margin="10"/>
+            <TextBox x:Name="CirculationTextBox" Margin="10"/>
+            
+            <TextBlock Text="Publication Date:" Margin="10"/>
+            <TextBox x:Name="PublicationDateTextBox" Margin="10"/>
+            
+            <TextBlock Text="Type:" Margin="10"/>
+            <TextBox x:Name="TypeTextBox" Margin="10"/>
+            
+            <TextBlock Text="Page Size:" Margin="10"/>
+            <TextBox x:Name="PageSizeTextBox" Margin="10"/>
+            
+            <Button Content="Load File" Click="LoadFileButton_Click" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10"/>
+        </StackPanel>
+    </Grid>
+</Window>
